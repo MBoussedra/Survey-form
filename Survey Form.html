@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
-<head>
+<!-- saved from url=(0064)file:///C:/Users/user/Documents/Survey%20form/Survey%20Form.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="Survey Form.css">
+	<link rel="stylesheet" type="text/css" href="./Survey Form_files/Survey Form.css">
 </head>
 <body>
 	<h1>Survey Form</h1>
 	<p id="description"></p>
 	<form id="survey-form">
 		<label id="name-label" for="name">Name:</label>
-		<input id="name"type="text" name="name" placeholder="your name"
-		required>
+		<input id="name" type="text" name="name" placeholder="your name" required=""><br>
 
 		<label id="email-label" for="email">Email:</label>
-		<input id="name" type="email" name="email" placeholder="your email"
-		required>
+		<input id="name" type="email" name="email" placeholder="your email" required=""><br>
 
-		<label id="number-label" for="number" >Number:</label>
-		<input id="number" type="number" placeholder="your number"
-		required
-		min="16"
-		max="99">
+		<label id="number-label" for="number">Number:</label>
+		<input id="number" type="number" placeholder="your number" required="" min="16" max="99"><br>
+    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+    <label><input name="prefer" value="Back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects</label>
+    <label><input name="prefer" value="Other projects" type="checkbox" class="input-checkbox">Other Projects</label>
 	</form>
-</body>
-</html>
+<select>
+  <option>Value 1</option> 
+  <option>Value 2</option>
+  <option>Value 3</option>
+</select>
+
+</body></html>
