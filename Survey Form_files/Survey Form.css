@@ -1,3 +1,35 @@
-#description{
-	
+body {
+	background-image: url("");
+	background-size:100% auto;
+	background-repeat: no-repeat;
+}
+
+#description {	
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+#name {
+}
+#name-label {
+}
+#email {
+}
+#email-label {
+}
+#number {
+}
+#number-label {
+}
+
+#title {
+}
+
+#dropdown {
+}
+
+#submit {
 }

@@ -5,25 +5,57 @@
 	<link rel="stylesheet" type="text/css" href="./Survey Form_files/Survey Form.css">
 </head>
 <body>
-	<h1>Survey Form</h1>
-	<p id="description"></p>
-	<form id="survey-form">
-		<label id="name-label" for="name">Name:</label>
-		<input id="name" type="text" name="name" placeholder="your name" required=""><br>
 
-		<label id="email-label" for="email">Email:</label>
-		<input id="name" type="email" name="email" placeholder="your email" required=""><br>
 
-		<label id="number-label" for="number">Number:</label>
-		<input id="number" type="number" placeholder="your number" required="" min="16" max="99"><br>
-    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
-    <label><input name="prefer" value="Back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects</label>
-    <label><input name="prefer" value="Other projects" type="checkbox" class="input-checkbox">Other Projects</label>
-	</form>
-<select>
-  <option>Value 1</option> 
-  <option>Value 2</option>
-  <option>Value 3</option>
-</select>
+<h1 id="title">Survey Form</h1>
 
-</body></html>
+<p id="description">a basic freeCodeC Survey Form</p>
+<form id="survey-form">
+	<label id="name-label" for="camper-name">Name:</label>
+	<input id="name" type="text" name="camper-name" placeholder="your name" required="">
+
+	<label id="email-label" for="email">Email:</label>
+	<input id="email" type="email" name="email" placeholder="your email" required="">
+
+	<label id="number-label" for="number">Age:</label>
+	<input id="number" type="number" placeholder="your number" required="" min="16" max="99">
+    
+	<p>Gender</p>
+	<label>
+	 	<input type="radio" value="male" checked="" name="gender">Male
+	</label>
+	<label>
+	 	<input type="radio" value="female" name="gender">Female
+	</label>
+	<label>
+	 	<input type="radio" value="other" name="gender">Other
+	</label>       
+	       
+	<p>What would you like to see improved ?</p>
+	    <label>
+	    	<input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects
+	    </label>
+	    <label>
+	    	<input name="prefer" value="Back-end-projects" type="checkbox" class="input-checkbox">Back-end Projects
+	    </label>
+	    <label>
+	    	<input name="prefer" value="Other projects" type="checkbox" class="input-checkbox">Other Projects
+	    </label>
+
+	<p>What is your current role??</p>
+	<select id="dropdown">
+	  <option>Student</option>
+	  <option>Self-taught learner</option>
+	  <option>Full-time Job</option>
+	  <option>Part-time Job</option>
+	  <option>Other</option>
+	</select>
+
+	<p>Do you have any comments?</p>
+	 <textarea placeholder="write here..."></textarea>
+	<button id="submit" type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
